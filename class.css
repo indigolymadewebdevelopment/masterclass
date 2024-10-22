@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.vidseg{
+    background-color: white;
+    height: 100vh;
+}
+.vidseg2, .vidseg{
+    width: 100vw;
+}
+.vidseg2{
+    height: 50vh;
+    gap: 10px;
+}
+.vidbox{
+
+    height: 310px;
+    background-color: white;
+}
+.vid1, .vid11, .vidbox, .vidbtns{
+    width: 300px;
+}
+.vid1, .vid11{
+    height: 200px;
+    background-color: ghostwhite;
+}
+.vid11{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.vid2 , .ccc{
+    height: 195px;
+    width: 295px;
+    border-radius: 5px ;
+    border: 1px solid silver;
+}
+
+.vidbtns{
+    height: 100px;
+}
+.vidinfo1, .vidinfo2, .vidinfo33, .vidinfo3{
+height: 20px;
+
+}
+.vidinfo1, .vidinfo2, .vidinfo3{
+    width: 280px;
+}
+.vidinfo33{
+    width: 100px;
+}
+.vidinfo3{
+justify-content: flex-start;
+background-color: transparent;
+}
+
+.vidinfo1, .vidinfo2, .vidinfo33{
+animation-name: scale;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+animation-timing-function: cubic-bezier(0.4, 0, 0.2,1);
+}
+@keyframes scale{
+    from{
+       background-color: ghostwhite;
+    }
+    to{
+        background-color: silver;
+    }
+   }
+
+.vidbox, .coursecode, .csc, .vid2, .loadmore, .pop, .classcode, .vidseg, .vidseg2, .vid11, .vidbtns, .vidinfo3{
+    display: flex;
+}
+.vidbox, .vid2, .vidbtns, .classcode, .pop, .vidseg{
+    flex-direction: column;
+}
+
+.vidseg,  .vid2, .loadmore, .vidseg2, .vid11, .pop, .ccc{
+    justify-content: center;
+}
+.vidseg, .csc, .vid2, .loadmore, .vidseg2, .vid11, .vidbtns, .pop, .coursecode{
+    align-items: center;
+}
+.vidbtns{
+    justify-content: space-evenly;
+}
+.vidseg2{
+    flex-wrap: wrap;
+}
+.coursecode{
+    justify-content: space-between;
+}
+
+.vidbox{
+    background-color: thistle;
+}
+
+.ad, .vid11{
+    
+    background-color: black;
+}
+.pop{
+    height: 300px;
+    width: 300px;
+    z-index: 2;
+    gap: 2em;
+
+    background-color: black;
+}
+.hid{
+    z-index: 0;
+}
+.classcode{
+    height: 6em;
+    width: 200px;
+    gap: 10px;
+
+}
+.csc{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    padding-left: 13px;
+}
+.codeinput, button{
+    height: 2em;
+    width: 200px;
+
+
+}
+.pop, .hid{
+    visibility: hidden;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+.pop{
+    animation-name: pu;
+
+}
+.hid{
+    animation-name: hidd;
+    visibility: visible;
+    animation-delay: 1s;
+}
+@keyframes pu{
+    from{
+       visibility: hidden;
+    }
+    to{
+       visibility: visible;
+    }
+   }
+   @keyframes hidd{
+    from{
+       visibility: visible;
+    }
+    to{
+       visibility: hidden;
+    }
+   }
+.load, .loadll{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 3px solid black;
+
+    border-left: 1px solid silver;
+border-top: 1px solid silver;
+    
+    animation-name: rotate;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2,1);
+    /* border-right: 1px solid white; */
+}
+
+
+   .vidseg, .vidseg2{
+    background-color: white;
+
+   }
+
+.loadmore{
+    height: 4em;
+    width: 100vw;
+
+}
+.loadll{
+    border: 3px solid white;
+
+    border-right: 1px solid black;
+border-bottom: 1px solid black;
+border-left: 1px solid black;
+
+}
+.coursecode{
+width: 210px;
+height: 45px;
+
+}
+@keyframes rotate{
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+   }
+
+   @media screen and (max-width:922px) { 
+    .vidseg, .vidseg2{
+height: 200vh   
+       }
+   }
+   @media screen and (max-width:610px) { 
+    .vidseg, .vidseg2{
+height: 300vh   
+       }
+   }

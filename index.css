@@ -1,0 +1,388 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header, .header{
+width: 100vw;
+    height: 16em;
+
+}
+
+header, .header{
+    height: 25em;
+
+}
+nav{
+    width: 50vw;
+    padding-top: 3em;
+}
+a, .nava, .logo, .myclasses{
+    color: white;
+ 
+}
+
+.logos{
+    height: 16em;
+}
+.logo{
+    padding-top: 2em;
+}
+.oms, .myclasses{
+     
+  padding-left: 5px;
+  font-size: 200%;
+
+
+  
+}
+.oms, .indigo, .myclasses, .nava, .signup{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
+.indigo, .nava{
+    font-size: 150%;
+
+}
+.indigo{
+    padding-left: 10px;
+}
+
+.myclasses, .myclasses1{
+    height: 5em;
+    width: 100vw;
+}
+.myclasses{
+      font-size: 200%;
+      padding-top: 25px;
+
+
+}
+.classroom{
+   
+gap: 5px;
+
+}
+.classroom, .classroom1, .classbox1{
+    height: 80vh;
+    width: 100vw;
+
+}
+
+
+
+.cbox, .classbox{
+    height: 320px;
+    width: 300px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+    
+
+
+}
+.classbox{
+    height: 370px;
+    background-color: silver;
+    border-radius: 10px;
+
+}
+.c1{
+    background-color: silver;
+    height: 300px;
+
+}
+
+.classcard{
+    height: 0px;
+    visibility:hidden;
+
+}
+
+li{
+    text-decoration: solid;
+}
+.addclasscard{
+    animation-name: drop;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    visibility: visible;
+    width: 300px;
+}
+
+.heading{
+    height: 2em;
+    width: 300px;
+    background-color: black;
+    color: white;
+    padding: 6px 6px;
+}
+.heading2{
+    padding: 7px;
+}
+.cbox{
+    gap: 1em;
+}
+
+
+
+.description{
+    height: 100px;
+    width: 300px;
+    /* background-color: blueviolet; */
+}
+.obj{
+    height: 200px;
+    width: 300px;
+    /* background-color: black; */
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 10px;
+   
+    padding-top: 20px;
+    color: white;
+}
+.obj2{
+    height: 200px;
+    padding-top: 20px;
+}
+
+.heading2, .obj{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 100%;
+}
+
+
+.myclasses1, .classroom1, .header{
+    background-color: indigo;
+}
+
+.classroom, .myclasses, header{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+    
+
+.line, .line2, .line3{
+gap: 5px;
+}
+
+.myclasses, .myclasses1{
+    background-color: red;
+
+}
+
+
+@keyframes drop{
+    from{
+       height: 200px;
+    }
+    to{
+       height:200px ;
+    }
+   }
+
+.button{
+    width: 290px;
+    height: 40px;
+background-color: silver;
+border-radius: 10px;
+
+}
+a, .abtn{
+    text-decoration: none;
+    
+}
+.btns, .i{
+    background-color: white;
+    height: 30px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 5px;
+    color: black;
+
+}
+
+.abtn{
+    color: black;
+}
+
+.classroom, .btns, .button, .cbox, footer , .copyr{
+align-items: center;
+}
+.classroom, .btns, .copyrights, .copyr, footer, .line, .line2, .line3, .join3, .join, .join2, .logos, .button, .classbox, .cbox, header, nav, .classcard, .obj{
+    display: flex;
+}
+.classbox, .cbox, .logos, .classcard, footer, .obj{
+
+    flex-direction: column;
+}
+.cbox, .btns, .classbox, .copyr, .classroom, .classcard, footer{
+    justify-content: center;
+}
+.classroom{
+    flex-wrap: wrap;
+}
+ .button{
+    justify-content: space-around;
+}
+.addcbox{
+    justify-content: center;
+    gap: 0em;
+}
+header, .logos{
+    justify-content: space-between;
+}
+
+nav{
+    justify-content: space-evenly;
+}
+.bcb{
+    position: absolute;
+
+    visibility: hidden;
+    font-size: 150%;
+}
+.classcard{
+    align-items: flex-start;
+}
+
+
+footer{
+    height: 20em;
+    width: 100vw;
+    gap: 19px;
+}
+.copyrights{
+gap: 7px;
+padding-left: 30px;
+}
+.email {
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    height: 2em;
+    width: 100px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.footer, .email, .copyright2, .copyr, i{
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 100%;
+}
+
+.fa, .solid, .fa-envelopes-bulk{
+    animation-name: bulky;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2,1);
+}
+
+@keyframes bulky{
+    form {
+        transform: rotateY(200deg);
+    }
+    to{
+        transform: rotateY(-200deg);
+    }
+}
+
+
+    @keyframes dropll{
+        from{
+           width: 0px;
+        }
+        to{
+           width: 30vw ;
+        }
+       }
+
+       
+    @keyframes whiten{
+        from{
+            color: transparent;
+        }
+        to{
+            color: white;
+        }
+       }
+.logos{
+    width: 210px;
+}
+
+.addheading3, .addheading2{
+visibility: hidden;
+height: 0px;
+}
+
+
+@media screen and (max-width:1115px) { 
+    .classroom1, .classroom{
+        height: 140vh;
+    }
+}
+
+
+@media screen and (max-width:631px) { 
+
+    .header , header, .logos{
+        height: 30em;
+    }
+    nav{
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .bcb{
+        
+            color: white;
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            visibility: visible;
+        
+        
+    }
+   a{
+    color: white;
+   }
+   .adda{
+    animation-name:whiten ;
+    animation-delay: 0.2s;
+    animation-duration:0s ;
+    animation-fill-mode: both;
+   }
+
+    .addnav{
+        visibility: visible;
+        animation-name: dropll;
+        animation-fill-mode: backwards;
+        animation-duration: 0.2s;
+        animation-timing-function: ease-out;
+
+    }
+}
+@media screen and (max-width:605px) { 
+    .classroom1, .classroom{
+        height: 190vh;
+    }
+}
