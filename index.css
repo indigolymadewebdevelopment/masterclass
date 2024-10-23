@@ -162,12 +162,15 @@ li{
 }
 
 
-.myclasses1, .classroom1, .header{
+ .header{
     background-color: indigo;
 }
 
-.classroom, .myclasses, header{
-    background-color: rgba(0, 0, 0, 0.6);
+ header{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.classroom, .classroom1, .myclasses, .myclasses1{
+    background-color: white;
 }
 
     
@@ -278,20 +281,24 @@ padding-left: 30px;
     border: 1px solid black;
 }
 
-.footer, .email, .copyright2, .copyr, i{
+.footer, .email, .copyright2, .copyr, i, .heading{
      font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   font-size: 100%;
 }
-
+.heading{
+    font-size: 120%;
+}
 .fa, .solid, .fa-envelopes-bulk{
     animation-name: bulky;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2,1);
 }
+
 
 @keyframes bulky{
     form {
@@ -308,7 +315,7 @@ padding-left: 30px;
            width: 0px;
         }
         to{
-           width: 30vw ;
+           width: 100vw ;
         }
        }
 
@@ -323,6 +330,7 @@ padding-left: 30px;
        }
 .logos{
     width: 210px;
+    width: 0px;
 }
 
 .addheading3, .addheading2{
@@ -350,7 +358,7 @@ height: 0px;
         align-items: center;
         gap: 2em;
         background-color: black;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.8);
     }
     .bcb{
         
@@ -378,6 +386,7 @@ height: 0px;
         animation-fill-mode: backwards;
         animation-duration: 0.2s;
         animation-timing-function: ease-out;
+        animation-fill-mode: both;
 
     }
 }
